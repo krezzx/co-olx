@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Co-oLX_Account</title>
+    <link rel="stylesheet" href="static/css/account.css">
+    <link rel="shortcut icon" href="image/SMLOGO.jpeg" type="image/x-icon">
+  
+   
+</head>
+
+<body>
+    
+    <div class="container">
+       
+        <div class="block">
+            <button class="close"><a href="{{url_for('home')}}">X</a></button>
+            <div class="user_detail">
+                <br>
+            <img height="80px" width="80px" src="static/image/p1-profile.png" alt="">
+            
+            <h1><span id="name">{{post.username}}</span></h1>
+            <br>
+            <hr>
+            <br>
+            <p>WBEMAIL : <span id="webmail">{{post.webmail}}</span></p>
+            <br>
+            <p>MOBILE NO. : <span id="mobile">{{post.mobile}}</span></p>
+            <br>
+            <p>HOSTEL ADDRESS : <span id="address">{{post.address}}</span></p><br>
+        </div>
+        
+    </div>
+    <div class="list">
+        <ul>
+            <a href="{{url_for('upload')}}"><li>ADD PRODUCT &nbsp;<img height="50px" width="50px" src="static/image/cart.jpg" alt=""></li></a><hr>
+            <a href="{{url_for('list')}}"><li> YOUR LISTED PRODUCT</li></a>
+           
+            
+            
+            
+        </ul>
+    </div>
+  
+</div>
+
+</body>
+
+</html>
